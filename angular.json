@@ -6,6 +6,30 @@
     "angular-samoan": {
       "projectType": "application",
       "schematics": {},
+      "i18n": {
+        "sourceLocale": {
+          "code": "en",
+          "baseHref": "/en/"
+        },
+        "locales": {
+          "de": {
+            "translation": "src/i18n/messages.de.xlf",
+            "baseHref": "de/"
+          },
+          "es": {
+            "translation": "src/i18n/messages.es.xlf",
+            "baseHref": "es/"
+          },
+          "fil": {
+            "translation": "src/i18n/messages.fil.xlf",
+            "baseHref": "fil/"
+          },
+          "sm": {
+            "translation": "src/i18n/messages.sm.xlf",
+            "baseHref": "sm/"
+          }
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -18,6 +42,9 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "localize": [
+              "en"
+            ],
             "aot": true,
             "assets": [
               "src/favicon.ico",
@@ -55,6 +82,22 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "de": {
+              "localize": ["de"],
+              "outputPath": "dist/public/angular-samoan-de"
+            },
+            "es": {
+              "localize": ["es"],
+              "outputPath": "dist/public/angular-samoan-es"
+            },
+            "fil": {
+              "localize": ["fil"],
+              "outputPath": "dist/public/angular-samoan-fil"
+            },
+            "sm": {
+              "localize": ["sm"],
+              "outputPath": "dist/public/angular-samoan-sm"
             }
           }
         },
@@ -66,6 +109,18 @@
           "configurations": {
             "production": {
               "browserTarget": "angular-samoan:build:production"
+            },
+            "de": {
+              "browserTarget": "angular-samoan:build:de"
+            },
+            "es": {
+              "browserTarget": "angular-samoan:build:es"
+            },
+            "fil": {
+              "browserTarget": "angular-samoan:build:fil"
+            },
+            "sm": {
+              "browserTarget": "angular-samoan:build:sm"
             }
           }
         },
@@ -114,6 +169,29 @@
           "configurations": {
             "production": {
               "devServerTarget": "angular-samoan:serve:production"
+            }
+          }
+        },
+        "xliffmerge": {
+          "builder": "@ngx-i18nsupport/tooling:xliffmerge",
+          "options": {
+            "xliffmergeOptions": {
+              "i18nFile": "messages.xlf",
+              "i18nBaseFile": "messages",
+              "encoding": "utf-8",
+              "i18nFormat": "xlf",
+              "srcDir": "src/i18n",
+              "genDir": "src/i18n",
+              "beautifyOutput": true,
+              "preserveOrder": true,
+              "defaultLanguage": "en",
+              "removeUnusedIds": true,
+              "languages": ["en",
+                "de",
+                "es",
+                "fil",
+                "sm"
+              ]
             }
           }
         }

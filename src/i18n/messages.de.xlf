@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="de">
+    <body>
+      <trans-unit id="accessDenied.denied" datatype="html">
+        <source>Access Denied</source>
+        <target state="final">Zugriff verweigert</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessDenied.info" datatype="html">
+        <source>You do not have sufficient rights to access this page.</source>
+        <target state="final">Sie haben nicht die erforderlichen Zugriffsrechte, um diese Seite aufrufen zu können.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
