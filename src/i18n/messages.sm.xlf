@@ -2,17 +2,17 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template" target-language="sm">
     <body>
-      <trans-unit id="accessDenied.denied" datatype="html">
-        <source>Access Denied</source>
-        <target state="final">Teena e le Mafai Ona Faaaogaina</target>
+      <trans-unit id="test.header" datatype="html">
+        <source>Localization Test for Samoan</source>
+        <target state="final">Localization Test mo le Gagana Samoa</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">1</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="accessDenied.info" datatype="html">
-        <source>You do not have sufficient rights to access this page.</source>
-        <target state="final">E le lava ni ou aia tatau e faaaoga ai lenei itualu.</target>
+      <trans-unit id="test.phrase" datatype="html">
+        <source>This is a test of using the locale import for the Samoan language.</source>
+        <target state="final">O le suʻega lea o le faʻaaogaina o le laufanua o lafoga mo le gagana Samoa.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">3</context>
