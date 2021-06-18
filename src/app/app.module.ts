@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
-import { registerLocaleData } from '@angular/common';
-import localeSm from './test-locales/sm.js';
+// import { registerLocaleData } from '@angular/common';
+// import localeSm from './locales/sm.js';
 
-registerLocaleData(localeSm, 'sm');
+// registerLocaleData(localeSm, 'sm');
 
 @NgModule({
   declarations: [

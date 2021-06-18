@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "build": "zsh ./pre-build-hack.sh && ng build --configuration production --localize",
     "build local": "ng build",
     "build prod": "ng build --configuration production --localize",
     "test": "ng test",
